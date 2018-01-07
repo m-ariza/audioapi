@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background: rgba(0, 0, 0, 0);
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo {
+    font-family: 'Archivo Black', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    font-weight: lighter;
+    background-color: rgb(26, 26, 26);
+    font-size: 25vw;
+    color: rgba(255, 255, 255, 1);
+}
+
+.logo::after {
+    opacity: .8;
+    content: "YAKK";
+    filter: blur(0);
+    display: inline-block;
+    margin: 15vh auto;
+}
+
+#player {
+    position: relative;
+    height: 100vh;
+}
+
+.controls {
+    width: 100vw;
+    margin: 10% auto;
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.075);
+    color: rgb(255, 255, 255);
+    bottom: 0;
+}
+
+#pButton {
+    text-shadow: #369299 10px 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10em;
+}
+
+#stop {
+    text-shadow: #993636 10px 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10em;
+}
+
+#timeline {
+    position: fixed;
+    bottom: 10px;
+    width: 100vw;
+    height: 20px;
+    border: #ffffff9f 1px solid;
+    background: #0068d6;
+    clear: both;
+    float: left;
+    border-radius: 0;
+}
+
+#playhead {
+    cursor: pointer;
+    margin-left: 0;
+    width: 10px;
+    height: 30px;
+    border-radius: 75%;
+    margin-top: -5px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: #919191 3px 2px 0px
+}
+
+
+/*#playhead::before {
+    content: '';
+    border-radius: 75%;
+    background-color: rgba(214, 214, 214, 0.24);
+    width: 11px;
+    height: 30px;
+    display: block;
+    margin: 1px 2px auto;
+}*/
+
+#playlist {
+    font-variant: small-caps;
+    top: 0;
+    letter-spacing: 5px;
+    position: fixed;
+    display: block;
+    font-size: 1.8em;
+    font-weight: 300;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100vw;
+}
+
+#playlist-btn {
+    cursor: pointer;
+    background-color: #ffffff;
+    display: block;
+    height: 35px;
+    width: 100vw;
+}
+
+.produced {
+    font-size: .7em;
+}
+
+#playlist li {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 30px 10px;
+    list-style: none;
+    text-align: center;
+    display: none;
+}
+
+#playlist li:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+#oscilloscope {
+    text-align: center;
+    align-items: center;
+    z-index: 0;
+    background: #004a9936;
+    margin: 10vh 5vw;
+    display: block;
+    position: absolute;
+    height: 80vh;
+    width: 90vw;
+    /*
+    background-image: url("../img/yak1.jpg");
+    background-size: 800px;
+    background-position: center;
+    background-repeat: no-repeat;*/
+}

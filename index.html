@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yakk - Hood Love 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Archivo+Black" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="logo"></div>
+
+
+    <div id="player">
+        <audio id="song">
+        <source src="https://m-ariza.github.io/marco/151(2).mp3"/>
+    </audio>
+
+        <canvas id="oscilloscope"></canvas>
+
+        <div id="timeline">
+            <div id="playhead"></div>
+        </div>
+        <div class="controls">
+            <i id="pButton" class="material-icons">&#xE037;</i>
+            <i id="stop" class="material-icons">&#xE047;</i>
+        </div>
+        <div id="playlist">
+            <div id="playlist-btn">Playlist</div>
+            <ul>
+                <li data-src="https://m-ariza.github.io/marco/151(2).mp3">
+                    Yak - Lost Love <span class="produced">(Prod by: Jay Major)</span>
+                </li>
+                <li data-src="https://m-ariza.github.io/audio/audio-player/audio/Fill This Safe.mp3">
+                    Yak - Fill This Safe <span class="produced">(Prod by: Jay Major)</span>
+                </li>
+                <li data-src="https://m-ariza.github.io/audio/audio-player/audio/Yakk%20-%20No%20More%20.mp3">
+                    Yak - No More <span class="produced">(Prod by: Jay Major)</span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="js/functions.js"></script>
+    <script src="js/waveform.js"></script>
+
+</body>
+
+</html>
