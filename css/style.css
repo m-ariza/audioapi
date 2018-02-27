@@ -1,4 +1,5 @@
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     background: rgba(0, 0, 0, 0);
     font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     width: 100vw;
     height: 100vh;
@@ -27,7 +29,8 @@ body {
 
 .logo::after {
     opacity: .8;
-    content: "YAKK";
+    content: "";
+    -webkit-filter: blur(0);
     filter: blur(0);
     display: inline-block;
     margin: 15vh auto;
@@ -49,20 +52,35 @@ body {
 }
 
 #pButton {
+    opacity: 0.25;
     text-shadow: #369299 10px 10px;
     cursor: pointer;
     display: inline-block;
     font-size: 10em;
 }
 
+#pButton:hover {
+    opacity: .9;
+    -webkit-transition: 200ms ease-in-out 5ms;
+    transition: 200ms ease-in-out 5ms;
+}
+
 #stop {
+    opacity: 0.25;
     text-shadow: #993636 10px 10px;
     cursor: pointer;
     display: inline-block;
     font-size: 10em;
 }
 
+#stop:hover {
+    opacity: .9;
+    -webkit-transition: 200ms ease-in-out 5ms;
+    transition: 200ms ease-in-out 5ms;
+}
+
 #timeline {
+    opacity: 0.25;
     position: fixed;
     bottom: 10px;
     width: 100vw;
@@ -74,6 +92,12 @@ body {
     border-radius: 0;
 }
 
+#timeline:hover {
+    opacity: .8;
+    -webkit-transition: 200ms ease-in-out 5ms;
+    transition: 200ms ease-in-out 5ms;
+}
+
 #playhead {
     cursor: pointer;
     margin-left: 0;
@@ -82,6 +106,7 @@ body {
     border-radius: 75%;
     margin-top: -5px;
     background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: #919191 3px 2px 0px;
     box-shadow: #919191 3px 2px 0px
 }
 
@@ -137,14 +162,15 @@ body {
 
 #oscilloscope {
     text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     z-index: 0;
-    background: #004a9936;
-    margin: 10vh 5vw;
+    background: #000000;
     display: block;
     position: absolute;
-    height: 80vh;
-    width: 90vw;
+    height: 100vh;
+    width: 100vw;
     /*
     background-image: url("../img/yak1.jpg");
     background-size: 800px;
