@@ -167,7 +167,7 @@
         background: #000000;
         display: block;
         position: absolute;
-        height: 100vh;
+        height: calc(100vh - 175px);
         width: 100vw;
         /*
     background-image: url("../img/yak1.jpg");
