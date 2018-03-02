@@ -17,8 +17,8 @@ function waveform2() {
     analyser.fftSize = 1024;
     var filter = audioContext.createBiquadFilter();
     var filter2 = audioContext.createBiquadFilter();
-    filter.Q.value = 10;
-    filter2.Q.value = 10;
+    filter.Q.value = 15;
+    filter2.Q.value = 25;
     songSource.connect(gainNode);
     gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
     gainNode.connect(splitter);
@@ -27,8 +27,8 @@ function waveform2() {
     filter.connect(analyser, 0);
     filter2.connect(analyser2, 0, 0);
 
-    filter.frequency.value = 80;
-    filter2.frequency.value = 2000;
+    filter.frequency.value = 70;
+    filter2.frequency.value = 750;
     scopeCanvas.height = 2000;
     scopeCanvas.width = waveform.length;
     var masterGain = audioContext.createGain();

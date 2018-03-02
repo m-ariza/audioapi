@@ -43,7 +43,7 @@
     
     .controls {
         width: 100vw;
-        margin: 10% auto;
+        margin: 20px auto;
         display: block;
         position: absolute;
         background-color: rgba(0, 0, 0, 0.075);
